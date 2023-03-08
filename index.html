@@ -4,119 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/4c729db828.js' crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
 
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="header">
-        <div class="container-fluid gx-0">
-
-            <nav class="navbar navbar-expand-lg py-0">
-                <div class="container">
-                  <a class="navbar-brand" href="#">
-                    <img src="/Image/logo.png" class="img_logo mt-4" alt="">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Blogs</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="btn_navbar" href="#">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
+   
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Marty Portfolio</a>
+            <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle fw-bold" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="ms-auto">
+                    <button type="button" class="btn btn-outline-dark pull-right fw-bold"> Hire Me
+                    </button>
                 </div>
-              </nav>
-
+            </div>
         </div>
+    </nav>
 
-
-        <section class="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="home_container">
-                            <div class="home_content">
-                                <h5 class="heading_sm">Hello I'm</h5>
-                                <h2 class="heading_lg">Marty D.<span> Marbella</span></h2>
-                                <h5 class="heading_md">Web Developer</h5>
-                                 <div class="social_links">
-                                    <i class="fa-brands icon_social fa-facebook"></i>
-                                    <i class="fa-brands icon_social fa-google"></i>
-                                    <i class="fa-brands icon_social fa-twitter"></i>
-                                    <i class="fa-brands icon_social fa-instagram"></i>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                       <img src="/Image/me2.jpg" class="img_home rounded-circle" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- <div class="detail_container">
-            <div class="clients mt-4">
-
-                <h5 class="heading_details">1000+</h5>
-                <p class="para_details">Happy Clients</p>
-
-            </div>
-
-            <div class="clients mt-4">
-
-                <h5 class="heading_details">1200</h5>
-                <p class="para_details">Projects Completed</p>
-                
-            </div>
-        </div> -->
-
-
+    <div class="p-5 mb-0 bg-dark text-center text-white">
+        <img src="/portfolio_marbella/images/me.jpg" class="rounded-circle" width="200" alt="">
+        <h1 class="my-name  h2">Marty D. Marbella</h1>
+        <div class="typewriter">
+            <h1 class="typed">Full Stack Web Developer</h1>
+          </div>
     </div>
 
- 
+    <div class="container-fluid py-5 bg-warning">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="position-absolute text-uppercase mb-5" style="color: orangered; font-size: 40px;">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100 mt-5" src="/portfolio_marbella/images/me2.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4" style="color: orangered; font-size: 40px;">I'm a Full Stack Web Developer</h3>
+                    <p>Hi, I'm a Full stack web developer with experience in building web applications from scratch. I'm proficient in HTML, CSS and Javascript, as well as frameworks such as React and Express. I have a passion for creating intuitive, user-friendly interfaces and writing efficient, scalable code. With a strong background in both front-end and back-end development, I'm able to tackle complex projects and deliver high-quality results on time.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2" style="color: orangered;"><h6>Name: <span class="text-dark">Marty D. Marbella</span></h6></div>
+                        <div class="col-sm-6 py-2" style="color: orangered;"><h6>Birthday: <span class="text-dark">Feb 28, 1994</span></h6></div>
+                        <div class="col-sm-6 py-2" style="color: orangered;"><h6>Degree: <span class="text-dark">BS-HRM</span></h6></div>
+                        <div class="col-sm-6 py-2" style="color: orangered;"><h6>Experience: <span class="text-dark">1 year</span></h6></div>
+                        <div class="col-sm-6 py-2" style="color: orangered;"><h6>Phone: <span class="text-dark">+63 935 9** ****</span></h6></div>
+                        <div class="col-sm-6 py-2" style="color: orangered;"><h6>Email: <span class="text-dark">marbella.tino@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2" style="color: orangered;"><h6>Address: <span class="text-dark">Cavite City</span></h6></div>
+                        <div class="col-sm-6 py-2" style="color: orangered;"><h6>Freelance: <span class="text-dark">Available</span></h6></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-center bg-black">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+            <div class="position-relative d-flex align-items-center justify-content-center mt-5 p-3"">
+                <h1 class="position-absolute text-uppercase mb-5" style="color: orangered; font-size: 40px;">My Projects</h1>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/portfolio_marbella/images/foodblog.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/portfolio_marbella/images/regform.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/portfolio_marbella/images/shop.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
 
 
 
 
-
-
-
-
-   
     
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
