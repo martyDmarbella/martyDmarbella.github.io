@@ -6,30 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
     <title>Portfolio</title>
 </head>
 <body>
    
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-black">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Marty Portfolio</a>
+            <a class="navbar-brand fw-bold text-light" href="#" style="font-family: 'Roboto', sans-serif;">Marty Portfolio</a>
             <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon bg-warning" style="border-radius: 5px;"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active fw-bold text-light" aria-current="page" href="#" style="font-family: 'Roboto', sans-serif;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active fw-bold" href="#">About Me</a>
+                        <a class="nav-link active fw-bold text-light" href="#" style="font-family: 'Roboto', sans-serif;">About Me</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle fw-bold" href="#" role="button"
+                        <a class="nav-link active dropdown-toggle fw-bold text-light" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Projects
                         </a>
@@ -41,7 +48,7 @@
                     </li>
                 </ul>
                 <div class="ms-auto">
-                    <button type="button" class="btn btn-outline-dark pull-right fw-bold"> Hire Me
+                    <button type="button" class="btn btn-outline-dark pull-right text-light fw-bold bg-warning" style="font-family: 'Roboto', sans-serif;"> Hire Me
                     </button>
                 </div>
             </div>
@@ -50,23 +57,23 @@
 
     <div class="p-5 mb-0 bg-dark text-center text-white">
         <img src="./images/me.jpg" class="rounded-circle" width="200" alt="">
-        <h1 class="my-name  h2">Marty D. Marbella</h1>
+        <h1 class="my-name" style="font-family: 'Roboto', sans-serif;">Marty D. Marbella</h1>
         <div class="typewriter">
-            <h1 class="typed">Full Stack Web Developer</h1>
+            <h1 class="typed" style="font-family: 'Righteous', cursive;">Full Stack Web Developer</h1>
           </div>
     </div>
 
     <div class="container-fluid py-5 bg-warning">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="position-absolute text-uppercase mb-5" style="color: orangered; font-size: 40px;">About Me</h1>
+                <h1 class="position-absolute text-uppercase mt-3 " style="color:orangered; font-size: 40px; font-family:'Righteous', cursive;">About Me</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg-5 pb-4 pb-lg-0">
                     <img class="img-fluid rounded w-100 mt-5" src="./images/me2.jpg" alt="">
                 </div>
                 <div class="col-lg-7">
-                    <h3 class="mb-4" style="color: orangered; font-size: 40px;">I'm a Full Stack Web Developer</h3>
+                    <h3 class="mb-4" style="color: orangered; font-size: 40px; font-family:'Righteous', cursive;">I'm a Full Stack Web Developer</h3>
                     <p>Hi, I'm a Full stack web developer with experience in building web applications from scratch. I'm proficient in HTML, CSS and Javascript, as well as frameworks such as React and Express. I have a passion for creating intuitive, user-friendly interfaces and writing efficient, scalable code. With a strong background in both front-end and back-end development, I'm able to tackle complex projects and deliver high-quality results on time.</p>
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2" style="color: orangered;"><h6>Name: <span class="text-dark">Marty D. Marbella</span></h6></div>
@@ -87,7 +94,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <h3 class="mb-3">My Projets </h3>
+                    <h3 class="mb-3" style="font-family:'Righteous', cursive; font-size: 30px;">My Projects </h3>
                 </div>
 
                 <div class="col-12">
@@ -152,16 +159,16 @@
       </div>
 
       <div class="col-2 container-fluid">
-        <a href="#" class="text-white me-4" style="text-decoration: none;">
+        <a href="https://www.facebook.com/profile.php?id=100076895246365" class="text-white me-4" style="text-decoration: none;">
             <i class="fa-brands fa-facebook-f"></i>
         </a>
-        <a href="#" class="text-white me-4" style="text-decoration: none;">
+        <a href="https://twitter.com/90TsMarty" class="text-white me-4" style="text-decoration: none;">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="#" class="text-white me-4" style="text-decoration: none;">
+        <a href="https://www.instagram.com/martydmarbella/" class="text-white me-4" style="text-decoration: none;">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#" class="text-white me-4" style="text-decoration: none;">
+        <a href="https://github.com/martyDmarbella" class="text-white me-4" style="text-decoration: none;">
           <i class="fab fa-github"></i>
         </a>
       </div>
@@ -201,6 +208,7 @@
             <p>
               <a href="#!" class="text-white" style="text-decoration: none;">Bootstrap 5</a>
             </p>
+            
           </div>
         
           
@@ -232,24 +240,6 @@
     </div>
 
   </footer>
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
