@@ -25,6 +25,20 @@
     from { width: 0 }
     to { width: 100% }
   }
+  
+
+  .card {
+    transition: 1s;
+  }
+
+  .card img {
+    border-radius: 5px;
+  }
+
+  .card:hover {
+      transform: scale(1.1);
+      z-index: 2;
+  }
 
   .fa-brands:hover {
     color: orangered;
