@@ -36,15 +36,10 @@
                         <a class="nav-link fw-bold text-white" href="#">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle fw-bold text-light" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Projects
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="blogpost.html">Blog Post</a></li>
-                            <li><a class="dropdown-item" href="foodblog.html">Food Blog</a></li>
-                            <li><a class="dropdown-item" href="bootstrap5.html">E-Shop</a></li>
-                        </ul>
+                        <a class="nav-link fw-bold text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-white" href="#projects">Projects</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav d-flex flex-row">
@@ -75,21 +70,28 @@
     </nav>
     <div class="container-fluid bg-dark p-5 text-center">
 
-        <img src="./images/me.jpg" class="rounded-circle" width="200" alt="">
-        <h1 class="my-name text-white" style="font-family: 'Roboto', sans-serif;">Marty D. Marbella</h1>
-        <h1 class="typed" style="color: #F7DC6F; font-family: 'Righteous', cursive;">Full Stack Web Developer</h1>
-
+        <img src="./images/me.jpg" class="rounded-circle" width="200" style="margin-top: 60px; border: 2px solid yellow;" alt="">
+        <h1 class="my-name text-white" style="font-family: 'Roboto', sans-serif; margin-top: 50px;">Marty D. Marbella</h1>
+        <h1 class="typed" style="color: #F7DC6F; font-family: 'Righteous', cursive; margin-top: 30px;">Full Stack Web Developer</h1>
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-8 offset-md-2" style="margin-top: 35px;">
+                <p class="intro text-white">Hello there! I'm thrilled to introduce myself as a full-stack web developer with a passion for creating dynamic and cutting-edge applications. With a comprehensive skill set that encompasses both front-end and back-end development.</p>
+              </div>
+            </div>
+          </div>
+          
     </div>
     </div>
 
     <div class="container-fluid py-5" style="background-color:#F7DC6F;">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="position-absolute text-uppercase mt-3 "
-                    style="font-size: 40px; font-family:'Righteous', cursive;">About Me</h1>
+                <h1 class="position-absolute text-uppercase mt-5 "
+                    style="font-size: 40px; font-family:'Righteous', cursive;" id="about">About Me</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
+                <div class="col-lg-5 pb-4 pb-lg-0 mt-5">
                     <img class="img-fluid rounded w-100 mt-5" src="./images/me2.jpg" alt="">
                 </div>
                 <div class="col-lg-7">
@@ -117,9 +119,11 @@
                         <div class="col-sm-6 py-2">
                             <h6>Address: <span class="text-dark">Cavite City</span></h6>
                         </div>
+                        
                         <div class="col-sm-6 py-2">
                             <h6>Freelance: <span class="text-dark">Available</span></h6>
                         </div>
+                        <a href="#" class="back-to-home-link" aria-label="Back to Home" style="text-decoration: none; list-style: none;">Back to Home</a>
                     </div>
                 </div>
             </div>
@@ -130,7 +134,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <h3 class="mb-3" style="color: #F7DC6F; font-family:'Righteous', cursive; font-size: 30px;">My
+                    <h3 class="mb-3" style="color: #F7DC6F; font-family:'Righteous', cursive; font-size: 30px;"
+                        id="projects">My
                         Projects </h3>
                 </div>
 
@@ -149,9 +154,9 @@
                                                 <h4 class="card-title text-center">Blog Post</h4>
                                                 <p class="card-text">A multi-page blog website that I made for people
                                                     like me wants to share their blogs.</p>
-                                                </div>
                                             </div>
                                         </div>
+                                    </div>
                                     <div class="col-md-4 mb-3">
                                         <div class="card">
                                             <a href="foodblog.html"><img class="img-fluid" alt="food-blog"
@@ -188,6 +193,7 @@
     <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
 
         <section class="p-4 text-center" style="background-color: #6351ce">
+            
         </section>
 
         <section class="">
@@ -224,6 +230,7 @@
                         <p><i class="fas fa-home mr-3"></i> San Antonio, Cavite City</p>
                         <p><i class="fas fa-envelope mr-3"></i> marbella.tino@gmail.com</p>
                         <p><i class="fas fa-phone mr-3"></i> +63 935 14* *****</p>
+                        <a href="#" class="back-to-home-link" aria-label="Back to Home" style="text-decoration: none; list-style: none;">Back to Home</a>
                     </div>
                 </div>
             </div>
@@ -238,6 +245,15 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelector('.back-to-home-link').addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
 </body>
 
 </html>
