@@ -41,6 +41,9 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link fw-bold text-white" href="#projects">Projects</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fw-bold text-white" href="#contacts">Contacts</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav d-flex flex-row">
                     <li class="nav-item me-3 me-lg-0">
@@ -134,12 +137,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <h3 class="mb-3" style="color: #F7DC6F; font-family:'Righteous', cursive; font-size: 30px;"
+                    <h3 class="mb-5" style="color: #F7DC6F; font-family:'Righteous', cursive; font-size: 30px; margin-top: 50px;"
                         id="projects">My
                         Projects </h3>
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 mt-5">
                     <div id="img-card" class="img_card" data-ride="carousel">
 
                         <div class="img-card mt-3">
@@ -169,7 +172,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mb-3">
+                                    <div class="col-md-4" style="margin-bottom: 60px;">
                                         <div class="card">
                                             <a href="bootstrap5.html"><img class="img-fluid" alt="shopify"
                                                     src="./images/shop.png"></a>
@@ -189,6 +192,84 @@
             </div>
         </div>
     </section>
+   
+<h2 class="h1-responsive font-weight-bold text-center my-4" id="contacts">Contact Me</h2>
+
+<div class="row">
+
+   
+    <div class="col-md-8 mb-md-0 mb-5">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+            
+            <div class="row">
+
+             
+                <div class="col-md-6 ms-5">
+                    <div class="md-form mb-0 me-5">
+                        <input type="text" id="name" name="name" class="form-control">
+                        <label for="name">Your name</label>
+                    </div>
+                </div>
+               
+                <div class="col-md-6 ms-5 me-5">
+                    <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email">Your email</label>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="md-form mb-0 ms-5 me-5">
+                        <input type="text" id="subject" name="subject" class="form-control">
+                        <label for="subject">Subject</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+
+                
+                <div class="col-md-12">
+
+                    <div class="md-form ms-5 me-5">
+                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        <label for="message">Your message</label>
+                    </div>
+
+                </div>
+            </div>
+           
+        </form>
+
+        <div class="text-center text-md-left mb-2">
+            <button class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</button>
+        </div>
+        <div class="status"></div>
+    </div>
+    
+    <div class="col-md-4 text-center">
+        <ul class="list-unstyled mb-0 me-5">
+            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>San Antonio, Cavite City</p>
+            </li>
+
+            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                <p>+63 935 14* *****</p>
+            </li>
+
+            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                <p>marbella.tino@gmail.com</p>
+            </li>
+        </ul>
+    </div>
+    
+
+</div>
+
 
     <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
 
